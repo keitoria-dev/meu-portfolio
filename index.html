@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keitoria | Web design e front end</title>
+  <meta name="description" content="Portfólio de web design e front end. Sites criados com HTML, CSS e JavaScript puro, com protótipos no Figma.">
+  <meta name="theme-color" content="#070707">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <canvas class="stars" id="stars" aria-hidden="true"></canvas>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">keitoria<span>.dev</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a class="link-line" href="#projetos">Projetos</a>
+        <a class="link-line nav-hide" href="#processo">Como funciona</a>
+        <a class="link-line nav-hide" href="#habilidades">Entregas</a>
+        <a class="link-line nav-hide" href="#sobre">Sobre</a>
+        <a class="btn-solid btn-small" href="#contato">Orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="reveal">Landing pages para o seu negócio receber mais contatos.</h1>
+          <p class="lead reveal" style="transition-delay: 100ms;">Páginas rápidas, responsivas e feitas sob medida, que levam o seu cliente direto para o WhatsApp.</p>
+          <div class="actions reveal" style="transition-delay: 200ms;">
+            <a class="btn-solid" href="#contato">Pedir orçamento</a>
+            <a class="link-line" href="#projetos">Ver projetos</a>
+          </div>
+          <ul class="chips reveal" style="transition-delay: 300ms;">
+            <li>Prazo de 7 dias</li>
+            <li>Do celular ao desktop</li>
+            <li>Modelo do seu gosto</li>
+          </ul>
+        </div>
+        <div class="hero-preview reveal" style="transition-delay: 250ms;">
+          <div class="frame hero-frame">
+            <div class="bar">
+              <span></span><span></span><span></span>
+              <em class="bar-url" id="heroName">Âmbar Café</em>
+            </div>
+            <div class="screen">
+              <iframe id="heroFrame" data-src="https://keitoria-dev.github.io/ambar-cafe/" title="Prévia do site em destaque" tabindex="-1" sandbox="allow-scripts allow-same-origin"></iframe>
+              <a class="cover" id="heroCover" href="https://keitoria-dev.github.io/ambar-cafe/" target="_blank" rel="noopener" aria-label="Abrir Âmbar Café"></a>
+            </div>
+          </div>
+          <div class="hero-tabs" id="heroTabs"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publico">
+      <div class="container">
+        <h2 class="section-title reveal">Para quem eu crio</h2>
+        <p class="section-text reveal">Negócios que precisam de uma página clara, bonita e pronta para receber pedidos e contatos.</p>
+        <div class="audience">
+          <div class="audience-item reveal">
+            <h3>Comida e delivery</h3>
+            <p>Cafeterias, confeitarias e restaurantes com cardápio em destaque e pedido direto no WhatsApp.</p>
+          </div>
+          <div class="audience-item reveal" style="transition-delay: 80ms;">
+            <h3>Lojas e acessórios</h3>
+            <p>Vitrine bonita, categorias fáceis de achar e um caminho curto até a compra.</p>
+          </div>
+          <div class="audience-item reveal" style="transition-delay: 160ms;">
+            <h3>Serviços e advocacia</h3>
+            <p>Apresentação profissional que passa confiança e facilita o primeiro contato.</p>
+          </div>
+          <div class="audience-item reveal" style="transition-delay: 240ms;">
+            <h3>Oficinas e autopeças</h3>
+            <p>Produtos e serviços organizados, com pedido de orçamento sem complicação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <h2 class="section-title reveal">Projetos</h2>
+        <p class="section-text reveal">Modelos reais, todos no ar. Veja qual combina mais com o seu negócio e toque na prévia para abrir.</p>
+        <div class="grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="processo">
+      <div class="container">
+        <h2 class="section-title reveal">Como funciona</h2>
+        <p class="section-text reveal">Um processo simples, do primeiro contato até a página no ar.</p>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-number">1</span>
+            <h3>Você conta sobre o negócio</h3>
+            <p>Me diga o que você vende, para quem e o que quer que o visitante faça na página.</p>
+          </li>
+          <li class="step reveal" style="transition-delay: 80ms;">
+            <span class="step-number">2</span>
+            <h3>Escolha o modelo</h3>
+            <p>Escolha o modelo que mais gostou entre os meus projetos ou peça que eu crie um modelo do seu gosto.</p>
+          </li>
+          <li class="step reveal" style="transition-delay: 160ms;">
+            <span class="step-number">3</span>
+            <h3>Orçamento sob medida</h3>
+            <p>O valor é calculado de acordo com o modelo escolhido, e você aprova antes de começar.</p>
+          </li>
+          <li class="step reveal" style="transition-delay: 240ms;">
+            <span class="step-number">4</span>
+            <h3>Sua página no ar</h3>
+            <p>Entrega em até 7 dias, responsiva e pronta para receber contatos.</p>
+          </li>
+        </ol>
+        <div class="terms">
+          <div class="term reveal">
+            <strong>7 dias</strong>
+            <p>Prazo para a sua página ficar pronta.</p>
+          </div>
+          <div class="term reveal" style="transition-delay: 100ms;">
+            <strong>Manutenção</strong>
+            <p>É um acréscimo. Atualizações de textos, fotos e preços depois da entrega são combinadas à parte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="container">
+        <h2 class="section-title reveal">O que eu entrego</h2>
+        <p class="section-text reveal">Passe o mouse ou toque nos cartões para ver o que está incluso em cada etapa.</p>
+        <div class="cards">
+          <div class="card reveal" tabindex="0" role="button" aria-label="Web design, toque para ver mais">
+            <div class="card-inner">
+              <div class="card-front"><h3>Web design</h3><p>Do conceito ao layout</p><small>Veja mais</small></div>
+              <div class="card-back"><h4>Design pensado para a sua marca</h4><ul class="card-list"><li>Layout que combina com a identidade do seu negócio</li><li>Hierarquia que guia o olhar até o botão de contato</li><li>Cores, fontes e imagens com coerência</li></ul></div>
+            </div>
+          </div>
+          <div class="card reveal" style="transition-delay: 100ms;" tabindex="0" role="button" aria-label="Front end, toque para ver mais">
+            <div class="card-inner">
+              <div class="card-front"><h3>Front end</h3><p>Do layout ao código</p><small>Veja mais</small></div>
+              <div class="card-back"><h4>Código rápido e organizado</h4><ul class="card-list"><li>HTML, CSS e JavaScript puro, sem frameworks pesados</li><li>Responsivo do celular ao desktop</li><li>Arquivos separados e fáceis de manter</li></ul></div>
+            </div>
+          </div>
+          <div class="card reveal" style="transition-delay: 200ms;" tabindex="0" role="button" aria-label="Figma, toque para ver mais">
+            <div class="card-inner">
+              <div class="card-front"><h3>Figma</h3><p>Do protótipo à aprovação</p><small>Veja mais</small></div>
+              <div class="card-back"><h4>Você vê antes de ficar pronto</h4><ul class="card-list"><li>Protótipo da página antes de programar</li><li>Ajustes de visual combinados com você</li><li>Menos retrabalho e prazo respeitado</li></ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container about">
+        <h2 class="reveal">Sobre mim</h2>
+        <div>
+          <p class="reveal">Amo tudo que envolve tecnologia. Aprendi por conta própria, testando, errando e refazendo até ficar bom.</p>
+          <p class="reveal" style="transition-delay: 100ms;">Adoro criar protótipos no Figma e transformar cada tela em código limpo. Web design é a minha paixão.</p>
+          <ul class="chips reveal" style="transition-delay: 200ms;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Figma</li>
+            <li>Responsividade</li>
+            <li>Prototipação</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="reveal">Vamos criar o seu site?</h2>
+          <p class="section-text reveal" style="transition-delay: 100ms;">Preencha o formulário e eu respondo pelo WhatsApp com os próximos passos e o orçamento.</p>
+          <ul class="contact-points reveal" style="transition-delay: 150ms;">
+            <li>Resposta direto no WhatsApp</li>
+            <li>Orçamento de acordo com o modelo</li>
+            <li>Prazo de entrega de 7 dias</li>
+          </ul>
+          
+          <a class="link-line large reveal" style="transition-delay: 250ms;" href="https://wa.me/5585988149571" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+        <form class="form reveal" id="contactForm" style="transition-delay: 150ms;">
+          <div class="field">
+            <label for="name">Seu nome</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="60" required>
+          </div>
+          <div class="field">
+            <label for="business">Qual é o seu negócio?</label>
+            <input id="business" name="business" type="text" maxlength="80" placeholder="Ex.: cafeteria, loja de acessórios, advocacia" required>
+          </div>
+          <div class="field">
+            <label for="model">Sobre o modelo da página</label>
+            <select id="model" name="model" required>
+              <option value="" disabled selected>Escolha uma opção</option>
+              <option value="Gostei de um dos modelos do portfólio">Gostei de um dos seus modelos</option>
+              <option value="Quero um modelo criado do meu gosto">Quero um modelo do meu gosto</option>
+              <option value="Ainda não sei, quero conversar">Ainda não sei</option>
+            </select>
+          </div>
+          <div class="field" id="pickField" hidden>
+            <label for="pick">Qual modelo você mais gostou?</label>
+            <select id="pick" name="pick"></select>
+          </div>
+          <div class="field">
+            <label for="details">Algo mais que eu deva saber? (opcional)</label>
+            <textarea id="details" name="details" rows="3" maxlength="400" placeholder="Ex.: cores que você gosta, referências, o que o visitante deve fazer na página"></textarea>
+          </div>
+          <button class="btn-solid" type="submit">Enviar pelo WhatsApp</button>
+          <p class="form-note">Ao enviar, o WhatsApp abre com a sua mensagem pronta.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section github" id="github">
+      <div class="container">
+        <h2 class="section-title reveal">Meu perfil no GitHub</h2>
+        <p class="section-text reveal" style="transition-delay: 100ms;">Conheça meu código e fale comigo também pelo Instagram.</p>
+        <article class="readme reveal" style="transition-delay: 150ms;">
+          <div class="readme-bar">
+            <img src="https://avatars.githubusercontent.com/u/270466996?s=64&amp;v=4" alt="Foto de perfil do GitHub" width="24" height="24">
+            <span>keitoria-dev / <strong>README.md</strong></span>
+          </div>
+          <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=140&amp;color=gradient&amp;customColorList=4C1D95,7C3AED,C4B5FD&amp;section=header" alt="" loading="lazy" onerror="this.style.display='none'">
+          <div class="readme-body">
+            <h3>Olá, eu sou a Keity 💜</h3>
+            <p class="readme-role">Front end Developer, Landing Pages e Web Design</p>
+            <a class="readme-badge" href="https://www.instagram.com/keitoria.dev/" target="_blank" rel="noopener">
+              <img src="https://img.shields.io/badge/Instagram-@keitoria.dev-7C3AED?style=for-the-badge&amp;logo=instagram&amp;logoColor=white" alt="Instagram keitoria.dev" loading="lazy">
+            </a>
+            <h4>O que eu faço</h4>
+            <p>Crio landing pages feitas sob medida e sem frameworks pesados: código limpo, rápido de carregar e pensado para converter visitas em contatos, pedidos e orçamentos.</p>
+            <ul class="readme-list">
+              <li>Design editorial, com identidade própria para cada marca</li>
+              <li>Layout totalmente responsivo, do celular ao desktop</li>
+              <li>Foco em conversão, com chamadas bem posicionadas</li>
+              <li>Código organizado em arquivos separados de HTML, CSS e JS</li>
+            </ul>
+            <h4>Tecnologias</h4>
+            <img class="readme-skills" src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode,figma" alt="HTML, CSS, JavaScript, Git, GitHub, VS Code e Figma" loading="lazy">
+            <img class="readme-stats" src="https://github-readme-stats.vercel.app/api?username=keitoria-dev&amp;show_icons=true&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=7C3AED&amp;icon_color=A78BFA&amp;text_color=8B5CF6" alt="Estatísticas do GitHub" loading="lazy" onerror="this.style.display='none'">
+          </div>
+          <img src="https://capsule-render.vercel.app/api?type=waving&amp;height=100&amp;color=gradient&amp;customColorList=4C1D95,7C3AED,C4B5FD&amp;section=footer" alt="" loading="lazy" onerror="this.style.display='none'">
+        </article>
+        <a class="link-line large reveal" href="https://github.com/keitoria-dev" target="_blank" rel="noopener">Ver perfil completo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> keitoria.dev</span>
+      <span>Feito à mão com HTML, CSS e JavaScript.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
